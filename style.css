@@ -44,7 +44,7 @@ nav {
 
 nav.sticky {
     padding: 15px 20px;
-    background: #4070f4;
+    background: var(--grey);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -60,7 +60,10 @@ nav .nav-content {
 nav .logo a {
     font-weight: 500;
     font-size: 35px;
-    color: #4070f4;
+    color: var(--pink);
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 nav.sticky .logo a {
@@ -86,7 +89,10 @@ nav.sticky .logo a {
 }
 
 .nav-links li a:hover {
-    color: #4070f4;
+    color: var(--pink);
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 nav.sticky .nav-links li a {
