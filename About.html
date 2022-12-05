@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="aboutStyle.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-content">
+        <div class="logo">
+          <a href="#">MakePlan.</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="home"></section>
+    <script>
+      let nav = document.querySelector("nav");
+      window.onscroll = function () {
+        if (document.documentElement.scrollTop > 20) {
+          nav.classList.add("sticky");
+        } else {
+          nav.classList.remove("sticky");
+        }
+      };
+    </script>
+
+    <div class="about-section">
+        <h1>About Us Page</h1>
+        <p>Dibuat sebagai tugas Kelompok 3</p>
+        <p>
+            Buat Rencanamu sekarang dan segera Wujudkan!
+        </p>
+    </div>
+    <h2 style="text-align:center" >Our Team</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="profiles/logoUnhas.png" alt="Universitas Hasanuddin" style="width:100%">
+                <div class="container">
+                    <h2>Universitas Hasanuddin</h2>
+                    <a href="https://www.unhas.ac.id/"><button class="button">Website</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="profiles/aryacoba.jpg" alt="Arya Saputra" style="width: 97%">
+                <div class="container">
+                    <h2>Arya Saputra</h2>
+                    <a href="https://www.instagram.com/arya_sputra08/"><button class="button">Contact</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img src="" alt="Muh Rofiadhim Rajab " style="width:100%">
+                <div class="container">
+                    <h2>Muh Rofiadhim Rajab</h2>
+                    <a href="https://www.instagram.com/rofiadhimrajab/"><button class="button">Contact</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
